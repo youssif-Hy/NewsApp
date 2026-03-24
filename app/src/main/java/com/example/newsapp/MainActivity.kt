@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.isVisible
 import com.example.newsapp.databinding.ActivityMainBinding
 import retrofit2.Call
 import retrofit2.Callback
@@ -29,6 +30,9 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         loadNews()
+        binding.swipeRefresh.setOnRefreshListener {
+            loadNews()
+        }
     }
     private fun loadNews () {
         val retrofit = Retrofit
@@ -44,7 +48,13 @@ class MainActivity : AppCompatActivity() {
             ) {
                 val news = response.body()
                 val articles = news?.articles
+                articles?.removeAll{
+                    it.title == "[Removed]"
+                }
                 Log.d("trace","Articles: $articles")
+                showNews(articles!!)
+                binding.progress.isVisible = false
+                binding.swipeRefresh.isRefreshing = false
             }
 
             override fun onFailure(
@@ -52,7 +62,13 @@ class MainActivity : AppCompatActivity() {
                 t: Throwable
             ) {
                 Log.d("trace","Error: ${t.message}")
+                binding.progress.isVisible = false
+                binding.swipeRefresh.isRefreshing = false
             }
         })
+    }
+    private fun showNews(articles: ArrayList<Article>) {
+        val adapter = NewsAdapter(this, articles)
+        binding.newsList.adapter = adapter
     }
 }
