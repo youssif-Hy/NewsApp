@@ -55,6 +55,19 @@
             android:backgroundTint="@color/white"
             toola:ignore="MissingConstraints" />
 
+        <ImageButton
+            android:id="@+id/favorite_button"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/favorite"
+            android:padding="8dp"
+            android:src="@android:drawable/btn_star_big_off"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
