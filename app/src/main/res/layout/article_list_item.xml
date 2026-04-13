@@ -65,7 +65,7 @@
             android:background="@android:color/transparent"
             android:contentDescription="@string/favorite"
             android:padding="8dp"
-            android:src="@drawable/ic_favorite_24"
+            android:src="@android:drawable/btn_star_big_off"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

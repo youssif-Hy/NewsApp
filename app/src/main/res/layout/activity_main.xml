@@ -106,7 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.6"
-                android:src="@drawable/bg_economy"
+                android:src="@drawable/broken_image"
                 android:scaleType="centerCrop"/>
             <TextView
                 android:layout_width="match_parent"
@@ -134,7 +134,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.6"
-                android:src="@drawable/bg_entertainment"
+                android:src="@drawable/broken_image"
                 android:scaleType="centerCrop"/>
             <TextView
                 android:layout_width="match_parent"
@@ -161,7 +161,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.6"
-                android:src="@drawable/bg_health"
+                android:src="@drawable/broken_image"
                 android:scaleType="centerCrop"/>
             <TextView
                 android:layout_width="match_parent"
@@ -189,7 +189,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.6"
-                android:src="@drawable/bg_technology"
+                android:src="@drawable/broken_image"
                 android:scaleType="centerCrop"/>
             <TextView
                 android:layout_width="match_parent"
@@ -217,7 +217,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.6"
-                android:src="@drawable/bg_science"
+                android:src="@drawable/broken_image"
                 android:scaleType="centerCrop"/>
             <TextView
                 android:layout_width="match_parent"
