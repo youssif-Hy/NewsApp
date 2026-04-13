@@ -15,7 +15,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="don_t_have_an_account">Don\'t have an account?</string>
-    <string name="forgot_your_password"><u>your password?</u></string>
+    <string name="forgot_your_password"><u>Forgot your password?</u></string>
     <string name="have_an_account">Have an account?</string>
     <string name="page_title">General</string>
     <string name="more">More</string>
@@ -28,4 +28,9 @@
     <string name="category_health">Health</string>
     <string name="category_technology">Technology</string>
     <string name="category_science">Science</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>
