@@ -7,12 +7,18 @@
     android:orientation="vertical"
     tools:context=".activities.RegistertionActivity">
 
+    <ImageView
+        android:layout_marginTop="64dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/appnews_ic" />
+
     <EditText
         android:id="@+id/email_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="16dp"
         android:hint="Email"
         android:inputType="textEmailAddress" />
 
@@ -40,7 +46,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="32dp"
-        android:text="Sign Up" />
+        android:text="Sign Up"
+        android:backgroundTint="@color/black"/>
 
     <TextView
         android:id="@+id/have_account_tv"
