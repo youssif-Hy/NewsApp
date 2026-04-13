@@ -48,10 +48,22 @@ class NewsListActivity : AppCompatActivity() {
         }
 
         val category = intent.getStringExtra(EXTRA_CATEGORY) ?: "general"
-        binding.screenTitle.text = category.replaceFirstChar { it.uppercase() }
+        binding.topAppBar.title = category.replaceFirstChar { it.uppercase() }
 
-        binding.settingsButton.setOnClickListener {
-            startActivity(Intent(this, SettingsActivity::class.java))
+        binding.topAppBar.setOnMenuItemClickListener { item ->
+            when (item.itemId) {
+                R.id.favorite -> {
+                    startActivity(Intent(this, FavoriteActivity::class.java))
+                    true
+                }
+                R.id.more -> {
+                    startActivity(Intent(this, SettingsActivity::class.java))
+                }
+            }
+            false
+        }
+        binding.topAppBar.setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
         }
 
         binding.swipeRefresh.setOnRefreshListener {
