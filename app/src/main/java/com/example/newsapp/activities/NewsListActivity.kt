@@ -3,6 +3,7 @@ package com.example.newsapp.activities
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -53,14 +54,16 @@ class NewsListActivity : AppCompatActivity() {
         binding.topAppBar.setOnMenuItemClickListener { item ->
             when (item.itemId) {
                 R.id.favorite -> {
-                    startActivity(Intent(this, FavoriteActivity::class.java))
+                    Toast.makeText(this, getString(R.string.login_required_favorite), Toast.LENGTH_SHORT)
+                        .show()
                     true
                 }
                 R.id.more -> {
                     startActivity(Intent(this, SettingsActivity::class.java))
+                    true
                 }
+                else -> false
             }
-            false
         }
         binding.topAppBar.setNavigationOnClickListener {
             onBackPressedDispatcher.onBackPressed()

@@ -11,7 +11,7 @@
         android:layout_marginTop="64dp"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:src="@drawable/appnews_ic" />
+        android:src="@mipmap/ic_launcher" />
 
     <EditText
         android:id="@+id/email_et"
