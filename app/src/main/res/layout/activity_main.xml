@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.6"
-                android:src="@drawable/broken_image"
+                android:src="@drawable/bg_general"
                 android:scaleType="centerCrop"/>
             <TextView
                 android:layout_width="match_parent"
@@ -78,7 +78,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.6"
-                android:src="@drawable/broken_image"
+                android:src="@drawable/bg_sports"
                 android:scaleType="centerCrop"/>
             <TextView
                 android:layout_width="match_parent"
@@ -106,7 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.6"
-                android:src="@drawable/broken_image"
+                android:src="@drawable/bg_economy"
                 android:scaleType="centerCrop"/>
             <TextView
                 android:layout_width="match_parent"
@@ -134,7 +134,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.6"
-                android:src="@drawable/broken_image"
+                android:src="@drawable/bg_entertainment"
                 android:scaleType="centerCrop"/>
             <TextView
                 android:layout_width="match_parent"
@@ -161,7 +161,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.6"
-                android:src="@drawable/broken_image"
+                android:src="@drawable/bg_health"
                 android:scaleType="centerCrop"/>
             <TextView
                 android:layout_width="match_parent"
@@ -189,7 +189,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.6"
-                android:src="@drawable/broken_image"
+                android:src="@drawable/bg_technology"
                 android:scaleType="centerCrop"/>
             <TextView
                 android:layout_width="match_parent"
@@ -217,7 +217,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:alpha="0.6"
-                android:src="@drawable/broken_image"
+                android:src="@drawable/bg_science"
                 android:scaleType="centerCrop"/>
             <TextView
                 android:layout_width="match_parent"
