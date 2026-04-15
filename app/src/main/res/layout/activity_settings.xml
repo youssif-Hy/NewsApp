@@ -1,49 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".activities.SettingsActivity">
+    android:background="#F6F7FB">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#121212"
+        app:title="Settings"
+        app:titleCentered="true"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:navigationIconTint="@android:color/white"/>
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/select_country"
-        android:textAppearance="@style/TextAppearance.Material3.TitleLarge" />
+        android:text="Choose Country"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"/>
+
 
     <RadioGroup
         android:id="@+id/country_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+        android:layout_margin="16dp">
 
         <RadioButton
             android:id="@+id/country_us"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="US" />
+            android:text="United States (US)"/>
 
         <RadioButton
             android:id="@+id/country_gb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="GB" />
+            android:text="United Kingdom (GB)"/>
 
         <RadioButton
             android:id="@+id/country_eg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="EG" />
+            android:text="Egypt (EG)"/>
     </RadioGroup>
+
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/save_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/save" />
+        android:text="Save"
+        android:layout_margin="16dp"
+        app:cornerRadius="12dp"
+        app:backgroundTint="#121212"
+        android:textColor="@android:color/white"/>
 
 </LinearLayout>
-

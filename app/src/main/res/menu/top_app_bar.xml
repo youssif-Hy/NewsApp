@@ -2,17 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/favorite"
-        android:icon="@android:drawable/btn_star_big_off"
-        android:title="@string/favorite"
-        app:showAsAction="ifRoom" />
+
+
 
     <item
-        android:id="@+id/more"
-        android:icon="@android:drawable/ic_menu_manage"
-        android:title="@string/more"
-        app:showAsAction="ifRoom" />
+        android:id="@+id/menu_more"
+        android:icon="@drawable/baseline_more_vert_24"
+        android:title="More"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/favorite"
+                android:title="Favorite" />
+
+            <item
+                android:id="@+id/settings"
+                android:title="Settings" />
+        </menu>
+    </item>
 
 </menu>
 
